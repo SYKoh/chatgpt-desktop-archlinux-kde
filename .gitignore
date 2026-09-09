@@ -1,5 +1,5 @@
-# Do not track the large source .deb or build artifacts in git.
-chatgpt_amd64.deb
+# Build artifacts only. The upstream .deb is fetched automatically, so it is
+# never stored here.
 *.pkg.tar.zst
 *.pkg.tar
 src/
