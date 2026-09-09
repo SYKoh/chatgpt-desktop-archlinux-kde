@@ -1,0 +1,6 @@
+# Do not track the large source .deb or build artifacts in git.
+chatgpt_amd64.deb
+*.pkg.tar.zst
+*.pkg.tar
+src/
+pkg/
