@@ -6,6 +6,7 @@
 - 上游：https://developers.openai.com/codex/app
 - 官方 deb 清单：`https://persistent.oaistatic.com/codex-app-prod/linux/deb/dists/stable/main/binary-amd64/Packages`
 - 结构：Electron 应用，可执行文件 `ChatGPT`（基于 Codex），菜单入口 `chatgpt`。
+- 参考 https://aur.archlinux.org/packages/chatgpt-desktop
 
 ## 特性
 
