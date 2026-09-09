@@ -14,8 +14,8 @@
 makepkg --config ./makepkg.local.conf
 ```
 
-说明：本机 `/etc/makepkg.conf` 的 `BUILDENV` 把 `fakeroot` 移除了，
-因此用 `--config ./makepkg.local.conf` 重新启用，使打包文件属主为 root。
+说明：makepkg 7.1.0 在打包阶段自动使用 fakeroot，使文件属主为 root。
+`./makepkg.local.conf` 仅用于设置干净的 `PACKAGER` 信息（会先 source 系统默认配置）。
 
 ## 安装（需要 root，在自己的终端执行）
 

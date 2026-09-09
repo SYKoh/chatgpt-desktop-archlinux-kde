@@ -34,7 +34,7 @@ package() {
   # Unpack the .deb payload into $pkgdir. The Debian control files and
   # Debian-specific lintian metadata are not needed on Arch.
   ar x chatgpt_amd64.deb
-  tar xf data.tar.xz -C "$pkgdir"
+  tar --no-same-owner -xf data.tar.xz -C "$pkgdir"
 
   # Remove Debian-only metadata that has no meaning on Arch.
   rm -rf "$pkgdir/usr/share/lintian"
@@ -44,6 +44,6 @@ package() {
   chmod 755 \
     "$pkgdir/usr/lib/chatgpt/codex-launcher" \
     "$pkgdir/usr/lib/chatgpt/ChatGPT" \
-    "$pkgdir/usr/lib/chatgpt/codex" \
-    "$pkgdir/usr/lib/chatgpt/codex-code-mode-host"
+    "$pkgdir/usr/lib/chatgpt/resources/codex" \
+    "$pkgdir/usr/lib/chatgpt/resources/codex-code-mode-host"
 }
